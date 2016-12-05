@@ -1,0 +1,45 @@
+confirm("This is used to find a volume of a geometrical shape. Use the key to enter in a number");
+var volumeType=prompt("Use the key** to find the shape you want.","Type here: ");
+switch(volumeType){
+	case'1':
+		confirm("You selected cone.");
+var areaNumber1=prompt("Type the diameter here");
+var areaNumber2=prompt("Type the height here");
+console.log("Answer:"+" "+(areaNumber1/2)*(areaNumber1/2)*Math.PI*areaNumber2/3);
+		break;
+	case'2':
+		confirm("You selected sphere.");
+var areaNumbers1=prompt("Type the diameter Here:");
+console.log("Answer"+" "+(areaNumbers1/2)*(areaNumbers1/2)*(areaNumbers1/2)*Math.PI*4/3);
+		break;
+	case'3':
+		confirm("You selected cylinder");
+var areaNumber1=prompt("Type the diameter here:");
+var areaNumber2=prompt("Type the height here");
+console.log("Answer:"+" "+(areaNumber1/2)*(areaNumber1/2)*Math.PI*areaNumber2);
+		break;
+	case'4':
+		confirm("You selected rectangular prism");
+var areaNumbers1=prompt("type the length here");
+var areaNumbers2=prompt("type the width here");
+var areaNumbers3=prompt("type the height here");
+var areaForm=function(length,width,height)
+{
+    console.log("Answer"+" "+areaNumbers1*areaNumbers2*areaNumbers3);
+};
+areaForm(areaNumbers1,areaNumbers2,areaNumbers3);
+		break;
+	case'5':
+		confirm("You selected triangular prism");
+var areaNumbers1=prompt("Type the length here");
+var areaNumbers2=prompt("Type the width here:");
+var areaNumbers3=prompt("Type the height here");
+var areaForm=function(length,width,height)
+{
+    console.log("Answer"+" "+(areaNumbers1*areaNumbers2)/2*areaNumbers3);
+};
+areaForm(areaNumbers1,areaNumbers2,areaNumbers3);
+		
+		break;
+	default:
+		confirm("Something went wrong. Please refresh the result screen and try again. ");
